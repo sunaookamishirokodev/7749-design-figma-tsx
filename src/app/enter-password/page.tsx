@@ -48,9 +48,7 @@ export default function EnterPassword() {
               onClick={() => setIsStaySignedIn(!isStaySignedIn)}
             >
               <div
-                className={`${
-                  !isStaySignedIn ? "ml-auto" : "mr-auto"
-                } [transition:all_0.5s_linear] h-6 w-6 bg-[#1D3153] my-auto rounded-full`}
+                className={`${!isStaySignedIn ? "translate-x-full " : ""}h-6 w-6 bg-[#1D3153] my-auto rounded-full transition-transform`}
               />
             </div>
             <span className="my-auto font-semibold text-sm">Stay signed in</span>
